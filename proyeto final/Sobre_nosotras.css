@@ -1,0 +1,58 @@
+/* Sección Misión */
+.mision {
+  background-color: #fff8f0;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.mision h2 {
+  font-size: 2.5em;
+  color: #4b2e20;
+  margin-bottom: 40px;
+  font-family: 'Georgia', serif;
+}
+
+/* Contenedor de las tarjetas */
+.cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+/* Tarjeta individual */
+.card {
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  max-width: 350px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+/* Imagen en la tarjeta */
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Título de la tarjeta */
+.card h3 {
+  font-size: 1.5em;
+  color: #a0522d;
+  margin-top: 15px;
+}
+
+/* Texto */
+.card p {
+  font-size: 1em;
+  color: #333333;
+  margin-top: 10px;
+  line-height: 1.6;
+}

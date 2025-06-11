@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo_form.css">
+    <title>Contacto</title>
+</head>
+<body>
+            <div class="form_contenedor">
+            <h2>Cuéntame, ¿cómo puedo ayudarte?</h2>
+                <form action="/login" method="post">
+            <div class="input_grupo">
+                <label for="username">Tu nombre</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="input_grupo">
+                <label for="password">Email</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+             <div class="input_grupo">
+                <label for="message">Algo que necesites contarme</label>
+                <input type="message" id="message" name="message" required>
+            </div>
+            <button type="submit">Enviar</button>
+        </form>
+        <p>*</p>
+        <a href="pagprincipal.html" class="volver">← Volver al menú principal</a>
+    </div>
+</body>
+</html>

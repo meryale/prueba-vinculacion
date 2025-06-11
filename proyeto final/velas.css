@@ -1,0 +1,103 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #fdf6f0;
+  color: #333;
+}
+
+
+header {
+  text-align: center;
+  background-color: #ffe8cc;
+  padding: 2rem 1rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  animation-name: color_fondo;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+.titulo-animado {
+  display: inline-block;
+  animation: moverTitulo 4s infinite alternate ease-in-out;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+@keyframes moverTitulo {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(40px);
+  }
+}
+.catalogo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.producto {
+  background-color: #fff;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  padding: 1rem;
+  width: 250px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.producto img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.precio {
+  font-weight: bold;
+  color: #b25d00;
+  display: block;
+  margin: 0.5rem 0;
+}
+
+button {
+  background-color: #ffcc80;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ffa726;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #ffe8cc;
+  margin-top: 2rem;
+}
+
+.producto {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.producto:hover {
+  transform: scale(1.05) translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);}
+
+.volver {
+  position: absolute;
+  top: 20px;
+  left: 30px;
+  text-decoration: none;
+  color: #5a3e36;
+  background-color: #ffe9d6;
+  
+}
+
+.volver:hover {
+  background-color: #f2b875;
+}
+  
